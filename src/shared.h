@@ -5,6 +5,7 @@
 #define PASSWD "Sup3rS3cur3R3m0t3P4ssw0rd"
 #define DEFAULTPORT "8080"
 #define MAXDATASIZE 1000000
+#define _XOPEN_SOURCE
 
 #include <arpa/inet.h>
 #include <errno.h>
