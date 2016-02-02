@@ -139,7 +139,7 @@ void recvcmd(int sockfd) {
   }
   buf[numbytes] = '\0';
 
-  printf("Running command: %s\n", buf);
+  printf("Running command: %s\n\n", buf);
 
   dup2(sockfd, STDOUT_FILENO);
   dup2(sockfd, STDERR_FILENO);
@@ -238,7 +238,7 @@ void logServerStart(char* port) {
 
   printf("Starting server\n");
   printf("\tport: %s\n", port);
-  printf("\tdir: %s\n", buff);
+  printf("\tdir: %s\n\n", buff);
 }
 
 

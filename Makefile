@@ -2,7 +2,7 @@ BIN_DIR = bin
 SRC_DIR = src
 OBJ_DIR = obj
 CC = gcc
-CFLAGS = -Wall -g -O2 -pedantic -std=c99 -lcrypt
+CFLAGS = -Wall -g -O2 -pedantic -std=c99 -D_POSIX_C_SOURCE=200809L -D_POSIX_PTHREAD_SEMANTICS
 
 all: setup shared server client
 
