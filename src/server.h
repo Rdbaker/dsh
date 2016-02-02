@@ -4,6 +4,7 @@
 #include "shared.h"
 
 void usage();
+void getHelp(int argc, char* argv[]);
 char* getPort(int argc, char* argv[]);
 void runServer(char* port);
 void sigchld_handler(int s);

@@ -4,6 +4,7 @@
 
 
 void usage();
+void getHelp(int argc, char* argv[]);
 char* getHost(int argc, char* argv[]);
 char* getPort(int argc, char* argv[]);
 void connectToServer();

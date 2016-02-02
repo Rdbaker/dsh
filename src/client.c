@@ -2,6 +2,7 @@
 
 
 int main(int argc, char* argv[]) {
+  getHelp(argc, argv);
   char* host = getHost(argc, argv);
   char* port = getPort(argc, argv);
   char* command = getCommand(argc, argv);
@@ -9,6 +10,15 @@ int main(int argc, char* argv[]) {
   connectToServer(host, port, command);
   // send command string
   // print response from server
+}
+
+
+void getHelp(int argc, char* argv[]) {
+  for(int i=0; i < argc; i++) {
+    if(strcmp(argv[i], "-h") == 0) {
+       usage();
+    }
+  }
 }
 
 

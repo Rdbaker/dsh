@@ -2,11 +2,23 @@
 
 
 int main(int argc, char* argv[]) {
+  getHelp(argc, argv);
   char* port = getPort(argc, argv);
   // check the "dir" arg
   // start the server loop
   runServer(port);
 }
+
+
+void getHelp(int argc, char* argv[]) {
+  for(int i=0; i < argc; i++) {
+    if(strcmp(argv[i], "-h") == 0) {
+       usage();
+    }
+  }
+}
+
+
 
 
 /*
