@@ -1,6 +1,10 @@
 #ifndef SERVER_H
 #define SERVER_H
 
+#ifndef SA_RESTART
+#define SA_RESTART 2
+#endif
+
 #include "shared.h"
 
 void usage();
