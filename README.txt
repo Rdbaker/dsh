@@ -3,6 +3,8 @@ rdbaker
 
 Distributed Shell
 
+NOTE: If you do not need it, please remove "-lcrypt" from the Makefile $(CFLAGS) variable. It works just fine on the CCC machines, but I could not compile it locally with that.
+
 
 ******************************************
         DEPENDENCIES (Server side)
